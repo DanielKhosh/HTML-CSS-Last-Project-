@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+p{
     font-family: "Lucida Console", Courier, monospace;
 }
-
 .responsive {
     max-width: 100%;
     height: auto;
@@ -13,9 +14,9 @@
 }
 .grid-container {
     display: grid;
-    grid-template-rows: 70px auto auto;
+    grid-template-rows: 70px auto auto auto;
 }
-.header1{
+.header{
     grid-row: 1/2;
     background-color: rgba(223, 36, 31,1);
     background-size: 100%;
@@ -34,17 +35,23 @@
     height: auto;
     padding: 2rem 1rem 2rem;
 }
-.first-container h3{
+h3{
     padding: 2rem 1rem 1rem;
     text-align: center;
 }
-.article1 {
+h2{
+    padding: 3rem 1rem 3rem;
+
+}
+.article{
     text-align: center;
 }
-.first-container{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+p{
+    padding: 0.5rem 1rem 0.5rem;
+}
 
