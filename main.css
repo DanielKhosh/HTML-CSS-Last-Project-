@@ -6,6 +6,7 @@
 }
 p{
     font-family: "Lucida Console", Courier, monospace;
+    max-width: 30rem;
 }
 hr{
     background-color: rgba(182, 25,108,1);
@@ -30,9 +31,6 @@ hr{
     height: auto;
     padding: 0rem 2rem 1rem ;
 }
-
-
-
 .grid-container {
     display: grid;
     grid-template-rows: 70px auto auto auto;
@@ -70,7 +68,6 @@ h3{
 }
 h2{
     padding: 3rem 1rem 2rem;
-
 }
 .article{
     text-align: center;
@@ -98,9 +95,44 @@ p{
     padding: 1rem 2rem 1rem;
     border-radius: 20%;
     text-shadow: 1px 1px rgba(182, 25,108,1);
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
-section{
-    padding-top: 0.5rem;
+.firt-button:hover{
+    background-color: rgba(245,162, 94,1);
+    padding: 1rem 2rem 1rem;
+    border-radius: 50%;
+    color: white;
 }
+
+/*----------------- page 2 ----------------------*/
+
+.back-button{
+    position:absolute;
+    max-width: 5rem;
+    max-height: auto;
+    transform: translatey(-1rem)
+}
+
+.grid-container-page-2{
+    grid-template-rows: 70px auto auto auto ;
+    display: grid;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.img-page-2{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem 2rem 1rem;
+}
+
+
 
 
