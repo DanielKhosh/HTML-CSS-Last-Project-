@@ -6,13 +6,14 @@
 }
 p{
     font-family: "Lucida Console", Courier, monospace;
-    max-width: 30rem;
+    max-width: 700px;
 }
 hr{
     background-color: rgba(182, 25,108,1);
     height:0.2rem;
     max-width: 70%;
     width: 100%;
+    font-size: 105%;
 }
 .responsive {
     max-width: 100%;
@@ -115,18 +116,15 @@ p{
     width: 100%;
     max-width: 700px;
     height: auto;
-    padding: 1.5rem 0rem 0rem;
+    padding: 1.5rem 0rem 2rem;
 }
-
 /*----------------- page 2 ----------------------*/
-
 .back-button{
     position:fixed;
     max-width: 2rem;
     max-height: auto;
     top: 2rem;
 }
-
 .grid-container-page-2{
     grid-template-rows: 70px auto auto auto ;
     display: grid;
@@ -154,12 +152,9 @@ p{
     height: auto;
     padding: 2rem 0rem 1rem;
 }
-
-/* ------------ tablet mode ------------------*/
-
+/* --------------- tablet mode ------------------*/
 @media(min-width: 700px){
     p{font-size: 110%;}
-    
     .info{
         max-width: 700px;
     }
@@ -167,17 +162,36 @@ p{
         width: 100%;
         max-width: 600px;
     }
-    .Iphone-11-pro-img{
-        width: 100%;
-        max-width: 600px;
-    }
-    .iphone-11-pro-max{
-        width: 100%;
-        max-width: 600px;
-    }
     .info p{
         max-width: 600px;
     }
 }
-
+@media(min-width: 1225px){
+    p{font-size: 110%;}
+    
+    .info{
+        max-width: 700px;
+    }
+    .article{
+        max-width: 700px;
+        width: 100%;
+    }
+    .responsive {
+        width: 100%;
+        max-width: 400px;
+    }
+    .phone-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .phone {
+        display: inline-block;
+    }
+    .firt-button{
+        position: absolute;
+        top: 5.1rem;
+        right: 5rem;
+    }
+}
 
