@@ -12,24 +12,22 @@ hr{
     background-color: rgba(182, 25,108,1);
     height:0.2rem;
     max-width: 70%;
-    position: relative;
-    left: 15%;
-    top: 15px;
+    width: 100%;
 }
 .responsive {
     max-width: 100%;
     height: auto;
     padding: 0rem 2rem 1rem ;
 }
-.Iphone-11-pro{
-    max-width: 97%;
+.Iphone-11-pro-img{
+    max-width: 100%;
     height: auto;
-    padding: 0rem 2rem 1rem ;
+    padding: 0rem 6rem 1rem ;
 }
 .iphone-11-pro-max{
-    max-width: 97%;
+    max-width: 100%;
     height: auto;
-    padding: 0rem 2rem 1rem ;
+    padding: 0rem 4rem 1rem ;
 }
 .grid-container {
     display: grid;
@@ -55,15 +53,15 @@ hr{
 h1{
     text-shadow:5px 5px 1px black;
 }
-
 .info{
-    background-color:rgba(255,210,173,1);
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(245, 98, 94,1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 1rem;
+}
+.info p{
+    text-shadow: 1px 1px rgba(182, 25,108,1);
 }
 h3{
     padding: 2rem 1rem 1rem;
@@ -114,9 +112,10 @@ p{
     color: white;
 }
 .img-page-1{
-    max-width: 800px;
+    width: 100%;
+    max-width: 700px;
     height: auto;
-    padding: 2rem 0rem 1rem;
+    padding: 1.5rem 0rem 0rem;
 }
 
 /*----------------- page 2 ----------------------*/
@@ -151,10 +150,34 @@ p{
 
 }
 .img-page-2{
-    max-width: 800px;
+    max-width: 100%;
     height: auto;
     padding: 2rem 0rem 1rem;
 }
 
+/* ------------ tablet mode ------------------*/
+
+@media(min-width: 700px){
+    p{font-size: 110%;}
+    
+    .info{
+        max-width: 700px;
+    }
+    .responsive {
+        width: 100%;
+        max-width: 600px;
+    }
+    .Iphone-11-pro-img{
+        width: 100%;
+        max-width: 600px;
+    }
+    .iphone-11-pro-max{
+        width: 100%;
+        max-width: 600px;
+    }
+    .info p{
+        max-width: 600px;
+    }
+}
 
 
