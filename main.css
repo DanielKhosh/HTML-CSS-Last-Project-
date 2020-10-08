@@ -13,7 +13,6 @@ hr{
     height:0.2rem;
     max-width: 70%;
     width: 100%;
-    font-size: 105%;
 }
 .responsive {
     max-width: 100%;
@@ -39,7 +38,6 @@ hr{
     justify-content: center;
 }
 .header{
-    grid-row: 1/2;
     background-color: rgba(245, 98, 94,1);
     background-size: 100%;
     text-align: center;
@@ -119,6 +117,18 @@ p{
     padding: 1.5rem 0rem 2rem;
 }
 /*----------------- page 2 ----------------------*/
+.header-page-2{
+    background-color: rgba(245, 98, 94,1);
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 3px rgba(255,175,173,1);
+    color: white;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+}
 .back-button{
     position:fixed;
     max-width: 2rem;
@@ -148,7 +158,14 @@ p{
 
 }
 .img-page-2{
-    max-width: 100%;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    padding: 2rem 0rem 1rem;
+}
+.main-img-page-2{
+    width: 100%;
+    max-width: 700px;
     height: auto;
     padding: 2rem 0rem 1rem;
 }
@@ -165,33 +182,84 @@ p{
     .info p{
         max-width: 600px;
     }
+    .back-button{
+        max-width: 3rem;
+    }
 }
-@media(min-width: 1225px){
-    p{font-size: 110%;}
-    
+/*------------------ desctop mode ---------------------*/
+@media(min-width: 1080px){
+    p{
+        font-size: 110%;
+    }
+    h2{
+        padding: 10px 0px 0px;
+    }
+    .img-page-2{
+        display: none;
+    }
     .info{
-        max-width: 700px;
+        max-width: 900px;
     }
     .article{
-        max-width: 700px;
+        max-width: 900px;
         width: 100%;
     }
     .responsive {
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
     }
-    .phone-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .none{
+        background-size: 100%;
     }
+
     .phone {
         display: inline-block;
     }
-    .firt-button{
-        position: absolute;
-        top: 5.1rem;
-        right: 5rem;
+    .grid-container-page-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 250px 250px repeat(7, auto) 30px;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "header header header"
+        "info2 info2 info2"
+        "info2 info2 info2"
+        ". . . "
+        "TL . . "
+        "TL mid . "
+        "TL mid BR "
+        "TL mid BR "
+        " . mid BR "
+        " .  .  BR "
+        ". . . "
     }
+    .header-page-2{
+        grid-area: header;
+    }
+    .info-page-2{
+        grid-area: info2;
+    }
+    .top-left{
+        grid-area: TL;
+        border: SOLID rgba(223, 36, 31,1) 2px;
+        background-color: rgba(255,175,173,1) ;
+        display: inline-block;
+    }
+    .mid-mid{
+        grid-area: mid;
+        border: solid rgba(182, 25,108,1) 2px;
+        background-color: rgba(228,155,193,1) ;
+        display: inline-block;
+    }
+    .bottom-right{
+        grid-area: BR;
+        border: solid rgba(223,118, 31,1) 2px;
+        background-color: rgba(255,210,173,1) ;
+        display: inline-block;
+    }
+    .back-button{
+        max-width: 5rem;
+    }
+    
 }
 
