@@ -175,6 +175,9 @@ p{
     .info{
         max-width: 700px;
     }
+    h2{
+        padding-top: 3rem;
+    }
     .responsive {
         width: 100%;
         max-width: 600px;
@@ -192,7 +195,7 @@ p{
         font-size: 110%;
     }
     h2{
-        padding: 10px 0px 0px;
+        padding: 3rem 0px 2rem;
     }
     .img-page-2{
         display: none;
@@ -218,7 +221,7 @@ p{
     .grid-container-page-2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px 250px 250px repeat(7, auto) 30px;
+        grid-template-rows: 70px 250px 250px 50 repeat(7, auto) 20px;
         grid-gap: 10px;
         grid-template-areas: 
         "header header header"
